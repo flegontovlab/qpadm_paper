@@ -1,0 +1,16 @@
+number	fit_criteria1	fit_criteria2	fit_criteria3
+1	%+/-2SE (0,1)	p>=0.001	simpler models not checked
+2	%+/-2SE (0,1)	p>=0.01	simpler models not checked
+3	%+/-2SE (0,1)	p>=0.05	simpler models not checked
+4	%+/-2SE (0,1)	p>=0.1	simpler models not checked
+5	%+/-2SE (0,1)	p>=0.5	simpler models not checked
+6	% (0,1)	p>=0.001	simpler models not checked
+7	% (0,1)	p>=0.01	simpler models not checked
+8	% (0,1)	p>=0.05	simpler models not checked
+9	% (0,1)	p>=0.1	simpler models not checked
+10	% (0,1)	p>=0.5	simpler models not checked
+11	% (-0.3,1.3)	p>=0.001	simpler models not checked
+12	% (-0.3,1.3)	p>=0.01	simpler models not checked
+13	% (-0.3,1.3)	p>=0.05	simpler models not checked
+14	% (-0.3,1.3)	p>=0.1	simpler models not checked
+15	% (-0.3,1.3)	p>=0.5	simpler models not checked
