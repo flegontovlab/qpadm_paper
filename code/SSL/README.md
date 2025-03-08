@@ -6,4 +6,4 @@ Scripts for simulations, analyses, and figures:
 - `qpAdm_{proximal,distal}*.R` = _qpAdm_ protocols
 - `qpAdm_result_processing*.R` = processing results of _qpAdm_ runs
 - `Figure_*/` = code and input for corresponding Figure
-   - for Figures 5, 6, and 7 other inputs are needed, available from Zenodo: https://doi.org/10.5281/zenodo.14966949
+   - for Figures 5, 6, 7, and 8 other inputs are needed, available from Zenodo: https://doi.org/10.5281/zenodo.14966949
