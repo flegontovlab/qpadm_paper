@@ -21,11 +21,11 @@ future::plan(multisession)
 setwd('./Isolation_by_distance/stepping-stone_simulations/qpAdm/systematic_sampling_Olas_results/6way_and_simpler_models/')
 
 ###reading all results###
-df1 <- read_delim("results_1way.txt", delim="\t", trim_ws=T)[,c(1:2,4:7)]
-df2 <- read_delim("results_2way.txt", delim="\t", trim_ws=T)[,c(1:2,4:8,10,12)]
-df3 <- read_delim("results_3way.txt", delim="\t", trim_ws=T)[,c(1:2,4:12)]
-df4 <- read_delim("results_4way.txt", delim="\t", trim_ws=T)[,c(1:2,4:14)]
-df6 <- read_delim("results_6way.txt", delim="\t", trim_ws=T)[,c(1:2,4:18)]
+df1 <- read_delim("results_1way.txt.gz", delim="\t", trim_ws=T)[,c(1:2,4:7)]
+df2 <- read_delim("results_2way.txt.gz", delim="\t", trim_ws=T)[,c(1:2,4:8,10,12)]
+df3 <- read_delim("results_3way.txt.gz", delim="\t", trim_ws=T)[,c(1:2,4:12)]
+df4 <- read_delim("results_4way.txt.gz", delim="\t", trim_ws=T)[,c(1:2,4:14)]
+df6 <- read_delim("results_6way.txt.gz", delim="\t", trim_ws=T)[,c(1:2,4:18)]
 
 df1$model <- "1-way"
 df2$model <- "2-way"

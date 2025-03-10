@@ -24,13 +24,13 @@ setwd('./biases_project/qpAdm/simulations_Ulas/input_data_and_plots_for_revision
 
 
 ###reading results for setups 1 and 2
-df <- read_delim("qpadm_setups12_300-1000Mbp_800gen_rotatin_non-rotating.csv", delim=",", trim_ws=T)[,c(1:16,19,20,23,24,27:31)]
+df <- read_delim("qpadm_setups12_300-1000Mbp_800gen_rotatin_non-rotating.csv.gz", delim=",", trim_ws=T)[,c(1:16,19,20,23,24,27:31)]
 
 ###reading results for setup 3
-dfa <- read_delim("qpadm_setup3_3000Mbp_3000gen_noisy_data_rotating.csv", delim=",", trim_ws=T)
-dfb <- read_delim("qpadm_setup3_3000Mbp_3000gen_rotating.csv", delim=",", trim_ws=T)
-dfc <- read_delim("qpadm_setup3_3000Mbp_3000gen_noisy_data_non-rotating.csv", delim=",", trim_ws=T)
-dfd <- read_delim("qpadm_setup3_3000Mbp_3000gen_non-rotating.csv", delim=",", trim_ws=T)
+dfa <- read_delim("qpadm_setup3_3000Mbp_3000gen_noisy_data_rotating.csv.gz", delim=",", trim_ws=T)
+dfb <- read_delim("qpadm_setup3_3000Mbp_3000gen_rotating.csv.gz", delim=",", trim_ws=T)
+dfc <- read_delim("qpadm_setup3_3000Mbp_3000gen_noisy_data_non-rotating.csv.gz", delim=",", trim_ws=T)
+dfd <- read_delim("qpadm_setup3_3000Mbp_3000gen_non-rotating.csv.gz", delim=",", trim_ws=T)
 dfa$max_depth_gen <- 3000
 dfb$max_depth_gen <- 3000
 dfc$max_depth_gen <- 3000

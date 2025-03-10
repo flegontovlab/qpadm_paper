@@ -57,9 +57,9 @@ files <- c("./input_files_basic_1-4way/filledcircle_qpAdm_distal_non-rotating_13
 
 
 for (f in files) {
-df2 <- read_delim(paste0(f,"_2way_p2_correct.txt"), delim="\t", trim_ws=T)[,c(1:7,13:56,64,65)]
-df3 <- read_delim(paste0(f,"_3way_p2_correct.txt"), delim="\t", trim_ws=T)[,c(1:8,26,30:67,77,78)]
-df4 <- read_delim(paste0(f,"_4way_p2_correct.txt"), delim="\t", trim_ws=T)[,c(1:9,44,49:86,98,99)]
+df2 <- read_delim(paste0(f,"_2way_p2_correct.txt.gz"), delim="\t", trim_ws=T)[,c(1:7,13:56,64,65)]
+df3 <- read_delim(paste0(f,"_3way_p2_correct.txt.gz"), delim="\t", trim_ws=T)[,c(1:8,26,30:67,77,78)]
+df4 <- read_delim(paste0(f,"_4way_p2_correct.txt.gz"), delim="\t", trim_ws=T)[,c(1:9,44,49:86,98,99)]
 
 ###adding s1-s2 distances###
 g = read.table('filledcircle_graph.txt', header = T) %>% 

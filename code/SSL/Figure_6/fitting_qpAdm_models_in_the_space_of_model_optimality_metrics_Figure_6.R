@@ -64,9 +64,9 @@ files <- c("./input_files_basic_1-4way/filledcircle_qpAdm_distal_non-rotating_13
 #df4 <- read_delim(paste0(f,"_4way_p3_correct.txt"), delim="\t", trim_ws=T)[,c(1:9,44,49:86,97)]
 
 for (f in files) {
-  df2 <- read_delim(paste0(f,"_2way_p2_correct.txt"), delim="\t", trim_ws=T)[,c(1:7,16,19:56,63)]
-  df3 <- read_delim(paste0(f,"_3way_p2_correct.txt"), delim="\t", trim_ws=T)[,c(1:8,26,30:67,76)]
-  df4 <- read_delim(paste0(f,"_4way_p2_correct.txt"), delim="\t", trim_ws=T)[,c(1:9,44,49:86,97)]
+  df2 <- read_delim(paste0(f,"_2way_p2_correct.txt.gz"), delim="\t", trim_ws=T)[,c(1:7,16,19:56,63)]
+  df3 <- read_delim(paste0(f,"_3way_p2_correct.txt.gz"), delim="\t", trim_ws=T)[,c(1:8,26,30:67,76)]
+  df4 <- read_delim(paste0(f,"_4way_p2_correct.txt.gz"), delim="\t", trim_ws=T)[,c(1:9,44,49:86,97)]
   
   ###rearranging columns
   df2$model <- "2-way"
