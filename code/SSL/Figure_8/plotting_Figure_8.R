@@ -48,11 +48,11 @@ leg=c("best available 1-way models NOT rejected",
 ###based on avg. distance and last 15 feasibility criteria: part 2
 gene_flows <- c("10-5 to 10-4", "10-4 to 10-3", "10-3 to 10-2", "10-5 to 10-2")
 for (gf in gene_flows) {
-  df <- filter(read_delim("data_for_Figure_8_v3.txt", delim="\t", col_types = "dcccccdccccd", trim_ws=T), metric!="false discovery rate" & metric!="positive rate" & metric!="percentage of experiments ending per complexity level" 
+  df <- filter(read_delim("data_for_Figure_8_v3.txt.gz", delim="\t", col_types = "dcccccdccccd", trim_ws=T), metric!="false discovery rate" & metric!="positive rate" & metric!="percentage of experiments ending per complexity level" 
                & simpler_models_treatment=="simpler models not checked" & gene_flow==gf & fit_criteria2!="0.01" & fit_criteria2!="0.1" & fit_criteria2!="0.001,   0.05")
-  ending2 <- filter(read_delim("data_for_Figure_8_v3.txt", delim="\t", col_types = "dcccccdccccd", trim_ws=T), metric=="percentage of experiments ending per complexity level"
+  ending2 <- filter(read_delim("data_for_Figure_8_v3.txt.gz", delim="\t", col_types = "dcccccdccccd", trim_ws=T), metric=="percentage of experiments ending per complexity level"
                    & simpler_models_treatment=="simpler models not checked" & gene_flow==gf & fit_criteria2!="0.01" & fit_criteria2!="0.1" & fit_criteria2!="0.001,   0.05")
-  fdr <- filter(read_delim("data_for_Figure_8_v3.txt", delim="\t", col_types = "dcccccdccccd", trim_ws=T), metric=="false discovery rate"
+  fdr <- filter(read_delim("data_for_Figure_8_v3.txt.gz", delim="\t", col_types = "dcccccdccccd", trim_ws=T), metric=="false discovery rate"
                 & simpler_models_treatment=="simpler models not checked" & gene_flow==gf & fit_criteria2!="0.01" & fit_criteria2!="0.1" & fit_criteria2!="0.001,   0.05")
   df2 <- filter(df, basic_metric!="max. distance" & basic_metric!="avg. distance" & basic_metric!="dist_to_corner_maxdist" & basic_metric!="dist_to_corner_avgdist_diffsqrt8")
   #ending2 <- filter(ending, basic_metric!="max. distance" & basic_metric!="avg. distance" & basic_metric!="dist_to_corner_maxdist")
