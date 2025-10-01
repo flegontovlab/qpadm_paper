@@ -1,8 +1,8 @@
 # Performance of _qpAdm_-based screens for genetic admixture on admixture-graph-shaped histories and stepping-stone landscapes
 
-Code for simulations and analyses as used in our recent evaluation of the _qpAdm_ tool. Current version under revision in a journal:
+Code for simulations and analyses as used in our recent evaluation of the _qpAdm_ tool. Final version published in _Genetics_:
 
-> Olga Flegontova, Ulaş Işıldak, Eren Yüncü, Matthew P. Williams, Christian D. Huber, Jan Kočí, Leonid A. Vyazov, Piya Changmai, Pavel Flegontov (2025): Performance of qpAdm-based screens for genetic admixture on admixture-graph-shaped histories and stepping-stone landscapes. bioRxiv 2023.04.25.538339; doi: https://doi.org/10.1101/2023.04.25.538339
+> Olga Flegontova, Ulaş Işıldak, Eren Yüncü, Matthew P. Williams, Christian D. Huber, Jan Kočí, Leonid A. Vyazov, Piya Changmai, Pavel Flegontov (2025): Performance of qpAdm-based screens for genetic admixture on admixture-graph-shaped histories and stepping-stone landscapes. _Genetics_, 230(1), iyaf047, DOI: https://doi.org/10.1093/genetics/iyaf047
 
 Principal software packages used in this study are:
 
